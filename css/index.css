@@ -28,10 +28,23 @@ img {
     height: auto;
 }
 
-h1 {
-    text-align: center;
+.offcenterTopImgTxt {
+    margin-top: 17vw;
+}
+
+.centeredImgTxt {
+    font-size: 80px;
+}
+
+.offcenterBottomImgTxt {
+    margin-top: 1vw;
+    width: 40%;
+}
+
+.offcenterTopImgTxt, .centeredImgTxt, .offcenterBottomImgTxt {
     color: white;
-    margin-top: 24vw; 
+    margin-left: 10%;
+    text-shadow: 3px 2px black;
 }
 
 .crop {
@@ -41,6 +54,6 @@ h1 {
     overflow: hidden;
 }
 
-.crop img{
+.crop img {
     width: 100%;
 }
