@@ -58,14 +58,28 @@ img {
     width: 100%;
 }
 
-footer .stuff {
-    grid-area: stuff;
+footer {
+    margin-top: -5px;
+    padding-top: 10%;
+}
+
+footer .stuff1 {
+    grid-area: stuff1;
+}
+
+footer .stuff2 {
+    grid-area: stuff2;
+}
+
+footer .stuff1, footer .stuff2 {
+    text-align: center;
 }
 
 footer {
     display: grid;
-    grid-template-columns: 1fr 50px 50px 1fr;
+    background-color: #969696;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-        ". stuff stuff .";
+        ". . stuff1 stuff2 . .";
 }
