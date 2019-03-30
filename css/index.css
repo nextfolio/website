@@ -29,7 +29,7 @@ img {
 }
 
 .offcenterTopImgTxt {
-    margin-top: 17vw;
+    margin-top: 16vw;
 }
 
 .centeredImgTxt {
@@ -56,4 +56,16 @@ img {
 
 .crop img {
     width: 100%;
+}
+
+footer .stuff {
+    grid-area: stuff;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 50px 50px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        ". stuff stuff .";
 }
