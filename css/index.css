@@ -1,127 +1,135 @@
 body {
-  margin: 0;
-  background-color: #a8a8a8
+    margin: 0;
+    background-color: #a8a8a8
 }
 
 html {
-  overflow: scroll;
+    overflow: scroll;
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
+    width: 0px;
+    background: transparent;
 }
 
 .mainBody {
-  margin-left: 10%;
-  margin-right: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .foreground {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .blur {
-  -webkit-filter: blur(8px);
-  filter: blur(8px);
+    -webkit-filter: blur(8px);
+    filter: blur(8px);
 }
 
 img {
-  display: block;
-  max-width: 100%;
-  width: 100%;
-  height: auto;
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
 }
 
 .offcenterTopImgTxt {
-  margin-top: 16vw;
+    margin-top: 16vw;
 }
 
 .centeredImgTxt {
-  font-size: 80px;
+    font-size: 80px;
 }
 
 .offcenterBottomImgTxt {
-  margin-top: 1vw;
-  width: 40%;
-  font-size: 26px;
+    margin-top: 1vw;
+    width: 40%;
+    font-size: 26px;
 }
 
 .offcenterTopImgTxt, .centeredImgTxt, .offcenterBottomImgTxt {
-  color: white;
-  margin-left: 10%;
-  text-shadow: 3px 2px black;
+    color: white;
+    margin-left: 10%;
+    text-shadow: 3px 2px black;
 }
 
 .crop {
-  display: inline-block;
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
+    display: inline-block;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
 }
 
 .crop img {
-  width: 100%;
-  background-size: contain;
+    width: 100%;
+    background-size: contain;
 }
 
 footer {
-  margin-top: -5px;
-  padding-top: 10%;
+    margin-top: -5px;
+    padding-top: 10%;
 }
 
 .contact {
-  grid-area: contact;
+    grid-area: contact;
 }
 
 .socials {
-  grid-area: socials;
+    grid-area: socials;
 }
 
 .copyright {
-  grid-area: copyright;
+    grid-area: copyright;
 }
 
 .contact, .socials, .copyright {
-  text-align: center;
+    text-align: center;
 }
 
 footer {
-  display: grid;
-  background-color: #969696;
-  grid-template-columns: 50px 1fr 1fr 1fr 50px;
-  grid-template-rows: auto;
-  grid-template-areas:
-    ". contact socials copyright .";
+    display: grid;
+    background-color: #969696;
+    grid-template-columns: 50px 1fr 1fr 1fr 50px;
+    grid-template-rows: auto;
+    grid-template-areas:
+        ". contact socials copyright .";
 }
 
 .button {
-  border: none;
-  color: white;
-  padding: 40px 80px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 18px;
-  margin-right: 20%;
-  margin-top: -10%;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-  cursor: pointer;
+    border: none;
+    color: white;
+    padding: 40px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 20%;
+    margin-top: -10%;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 
 .button2 {
-  background-color: transparent;
-  color: white;
-  border: 2px solid #005ce6;
-  border-radius: 5px;
-  float: right;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #005ce6;
+    border-radius: 5px;
+    float: right;
 }
 
 .button2:hover {
-  background-color: #005ce6;
+    background-color: #005ce6;
+}
+
+.control-label {
+    color: #FFF;
+}
+
+.label {
+    color: #FFF;
 }
