@@ -1,20 +1,27 @@
+// generate portfolio pi chart 
 let data = [{"symbol": "AAPL", "percent": 50}, {"symbol": "MSFT", "percent": 20}, {"symbol": "CELG", "percent": 30}];
-var colors = d3.scaleOrdinal(d3.schemeDark2)
+var colors = d3.scaleOrdinal(d3.schemeSet1)
 const svg = d3.select("svg");
 
 let alteredData = d3.pie().sort(null).value(d => d.percent)(data)
 
 let segments = d3.arc()
                 .innerRadius(0)
-                .outerRadius(200)
+                .outerRadius(170)
                 .padRadius(50)
 
-let sections = svg.append("g").attr("transform", "translate(250, 250)").selectAll("path").data(alteredData)
+let sections = svg.append("g").attr("transform", "translate(200, 170)").selectAll("path").data(alteredData)
 
 sections.enter().append("path").attr("d", segments).attr("fill", d => colors(d.data.percent))
 
 let legend = svg.append("g").attr("class", "legend")
 
 data.forEach(function(d, i) {
-    legend.append("text").attr("transform", `translate(500, ${350 + 40*i})`).text(`${d.symbol} - ${d.percent}%`).attr("fill", colors(d.percent))
+    legend.append("text").attr("transform", `translate(410, ${150 + 30*i})`).text(`${d.symbol} - ${d.percent}%`).attr("fill", colors(d.percent))
 })
+// end of pi chart generator
+
+
+// make line chart for profit over time
+
+let chartData = [{"percent": 30, "time": 100}, {"percent": 15, "time": 120}, {"percent": 37, "time": 150}]
