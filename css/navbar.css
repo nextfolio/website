@@ -7,14 +7,10 @@
     opacity: 0.9;
 }
 
-.navbar .logIn {
-    float: right;
-}
-
 .navbar a {
     float: left;
     display: block;
-    color: #FFD700;
+    color: #67F967;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
