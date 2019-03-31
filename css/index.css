@@ -94,8 +94,3 @@ footer {
     grid-template-areas:
         ". . stuff1 stuff2 . .";
 }
-
-.formLogInSignUp {
-    text-align: center;
-    padding-top: 200px;
-}
