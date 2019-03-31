@@ -20,3 +20,8 @@ data.forEach(function(d, i) {
     legend.append("text").attr("transform", `translate(410, ${150 + 30*i})`).text(`${d.symbol} - ${d.percent}%`).attr("fill", colors(d.percent))
 })
 // end of pi chart generator
+
+
+// make line chart for profit over time
+
+let chartData = [{"percent": 30, "time": 100}, {"percent": 15, "time": 120}, {"percent": 37, "time": 150}]
