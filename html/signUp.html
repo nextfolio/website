@@ -2,60 +2,65 @@
 <html>
 
 <head>
-    <title>NextFolio</title>
+  <title>NextFolio</title>
 
-    <meta charset="UTF-8">
-    <meta name="description" content="Web app that turns boring financial portfolios into a fun social media platform.">
-    <meta name="keywords" content="Stock, Security, Finances, Financial, Portfolio">
-    <meta name="author" content="Preston Rozwood, Ari Berkowicz">
+  <meta charset="UTF-8">
+  <meta name="description" content="Web app that turns boring financial portfolios into a fun social media platform.">
+  <meta name="keywords" content="Stock, Security, Finances, Financial, Portfolio">
+  <meta name="author" content="Preston Rozwood, Ari Berkowicz">
 
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/navbar.css">
-    <script src="https://d3js.org/d3.v5.min.js"></script>
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
 
 <body>
-    <main>
-        <div class="crop">
-            <img class="blur" src="../resources/properWallStreet.jpg" />
-        </div>
-        <div class="foreground">
-            <h1>
-                <form class="formLogInSignUp">
-                    First Name:<br>
-                    <input type="text" name="firstName">
-                    <br>
-                    Last Name:<br>
-                    <input type="text" name="lastName">
-                    <br>
-                    Email:<br>
-                    <input type="text" name="email">
-                    <br>
-                    Username:<br>
-                    <input type="text" name="userName">
-                    <br>
-                    Password:<br>
-                    <input type="text" name="password">
-                    <br>
-                    Re-enter Password:<br>
-                    <input type="text" name="rePassword">
-                    <br>
+  <main>
+    <div class="crop">
+      <img class="blur" src="../resources/properWallStreet.jpg" />
+    </div>
+    <div class="foreground">
+      <h1>
+        <form class="formLogInSignUp">
+          First Name:<br>
+          <input type="text" name="firstName">
+          <br>
+          Last Name:<br>
+          <input type="text" name="lastName">
+          <br>
+          Email:<br>
+          <input type="text" name="email">
+          <br>
+          Username:<br>
+          <input type="text" name="userName">
+          <br>
+          Password:<br>
+          <input type="text" name="password">
+          <br>
+          Re-enter Password:<br>
+          <input type="text" name="rePassword">
+          <br>
 
-                </form>
-            </h1>
-        </div>
-    </main>
+        </form>
+      </h1>
+    </div>
+  </main>
 
-    <header>
-        <div class="navbar">
-            <div class="mainBody">
-                <a href="../index.html">Home</a>
-                <a href="#news">News</a>
-                <a href="signUp.html" class="logIn">Sign Up</a>
-                <a href="login.html" class="logIn">Login In</a>
-            </div>
-        </div>
-    </header>
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">NextFolio</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Page 1</a></li>
+        <li><a href="#">Page 2</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="logIn.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </nav>
 </body>
 
 </html>

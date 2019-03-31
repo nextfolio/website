@@ -25,6 +25,10 @@
       <img class="blur" src="../resources/properWallStreet.jpg" />
     </div>
     <div class="foreground" class="container">
+      <style>
+        .container {
+        position: fixed;
+        }</style>
       <form class="form-horizontal" action="/action_page.php">
         <div class="form-group">
           <label class="control-label col-sm-2" for="email">Email:</label>
@@ -54,16 +58,21 @@
     </div>
   </main>
 
-  <header>
-    <div class="navbar">
-      <div class="mainBody">
-        <a href="../index.html">Home</a>
-        <a href="#news">News</a>
-        <a href="signUp.html" class="logIn">Sign Up</a>
-        <a href="login.html" class="logIn">Login In</a>
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">NextFolio</a>
       </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Page 1</a></li>
+        <li><a href="#">Page 2</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="logIn.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
     </div>
-  </header>
+  </nav>
 </body>
 
 </html>
