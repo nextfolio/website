@@ -74,23 +74,27 @@ footer {
     padding-top: 10%;
 }
 
-footer .stuff1 {
-    grid-area: stuff1;
+.contact {
+    grid-area: contact;
 }
 
-footer .stuff2 {
-    grid-area: stuff2;
+.socials {
+    grid-area: socials;
 }
 
-footer .stuff1, footer .stuff2 {
+.copyright {
+    grid-area: copyright;
+}
+
+.contact, .socials, .copyright {
     text-align: center;
 }
 
 footer {
     display: grid;
     background-color: #969696;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 50px 1fr 1fr 1fr 50px;
     grid-template-rows: auto;
     grid-template-areas:
-        ". . stuff1 stuff2 . .";
+        ". contact socials copyright .";
 }
