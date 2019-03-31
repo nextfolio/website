@@ -3,10 +3,6 @@ body {
     background-color: #a8a8a8
 }
 
-html a.no-color, body a.no-color {
-    color: unset;
-}
-
 html {
     overflow: scroll;
 }
