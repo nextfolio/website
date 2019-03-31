@@ -1,3 +1,29 @@
+header {
+    margin-top: 8%;
+}
+
+header h2 {
+    margin-left: 6%;
+}
+
+main {
+    margin-top: 7%;
+}
+
 main svg {
     margin-top: 3.6%;
+}
+
+main p {
+    margin-left: 5%;
+    margin-bottom: -2%;
+    font-size: 20px;
+}
+
+main svg text {
+    stroke: #000;
+    stroke-width: 0.5px;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    font-weight: 800;
 }
