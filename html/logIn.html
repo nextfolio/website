@@ -2,48 +2,68 @@
 <html>
 
 <head>
-    <title>NextFolio</title>
+  <title>NextFolio</title>
 
-    <meta charset="UTF-8">
-    <meta name="description" content="Web app that turns boring financial portfolios into a fun social media platform.">
-    <meta name="keywords" content="Stock, Security, Finances, Financial, Portfolio">
-    <meta name="author" content="Preston Rozwood, Ari Berkowicz">
+  <meta charset="UTF-8">
+  <meta name="description" content="Web app that turns boring financial portfolios into a fun social media platform.">
+  <meta name="keywords" content="Stock, Security, Finances, Financial, Portfolio">
+  <meta name="author" content="Preston Rozwood, Ari Berkowicz">
 
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/navbar.css">
-    <script src="https://d3js.org/d3.v5.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
 
 <body>
-    <main>
-        <div class="crop">
-            <img class="blur" src="../resources/properWallStreet.jpg" />
+  <main>
+    <div class="crop">
+      <img class="blur" src="../resources/properWallStreet.jpg" />
+    </div>
+    <div class="foreground" class="container">
+      <form class="form-horizontal" action="/action_page.php">
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="email">Email:</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          </div>
         </div>
-        <div class="foreground">
-            <h1>
-                <form class="formLogInSignUp">
-                    Username:<br>
-                    <input type="text" name="userName">
-                    <br>
-                    Password:<br>
-                    <input type="text" name="passWord">
-                    <br>
-
-                </form>
-            </h1>
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="pwd">Password:</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+          </div>
         </div>
-    </main>
-
-    <header>
-        <div class="navbar">
-            <div class="mainBody">
-                <a href="../index.html">Home</a>
-                <a href="#news">News</a>
-                <a href="signUp.html" class="logIn">Sign Up</a>
-                <a href="login.html" class="logIn">Login In</a>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+              <label><input type="checkbox" name="remember"> Remember me</label>
             </div>
+          </div>
         </div>
-    </header>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <header>
+    <div class="navbar">
+      <div class="mainBody">
+        <a href="../index.html">Home</a>
+        <a href="#news">News</a>
+        <a href="signUp.html" class="logIn">Sign Up</a>
+        <a href="login.html" class="logIn">Login In</a>
+      </div>
+    </div>
+  </header>
 </body>
 
 </html>
