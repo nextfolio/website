@@ -20,10 +20,25 @@ main p {
     font-size: 20px;
 }
 
+main svg {
+    margin-left: 5%;
+}
+
 main svg text {
     stroke: #000;
     stroke-width: 0.5px;
     stroke-linecap: butt;
     stroke-linejoin: miter;
     font-weight: 800;
+}
+
+#line-chart {
+    float: right;
+    margin-top: -26%;
+    margin-right: 8%;
+}
+
+#line-chart .line {
+    stroke: steelblue;
+    fill: none;
 }
