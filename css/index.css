@@ -3,6 +3,10 @@ body {
     background-color: #a8a8a8
 }
 
+html a.no-color, body a.no-color {
+    color: unset;
+}
+
 html {
     overflow: scroll;
 }
@@ -69,11 +73,6 @@ img {
     background-size: contain;
 }
 
-footer {
-    margin-top: -5px;
-    padding-top: 10%;
-}
-
 .contact {
     grid-area: contact;
 }
@@ -88,15 +87,6 @@ footer {
 
 .contact, .socials, .copyright {
     text-align: center;
-}
-
-footer {
-    display: grid;
-    background-color: #969696;
-    grid-template-columns: 50px 1fr 1fr 1fr 50px;
-    grid-template-rows: auto;
-    grid-template-areas:
-        ". contact socials copyright .";
 }
 
 .button {
@@ -136,4 +126,10 @@ footer {
 
 .form-control {
     width: 50%;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.87);
+    color: rgba(255, 255, 255, 0.7);
+    padding: 64px 0 128px;
 }
