@@ -1,4 +1,4 @@
-d3.selectAll("a").each(function() {
+d3.select("nav").selectAll("a").each(function() {
     let link = d3.select(this)
     link.style("background", "#005ce6")
 
