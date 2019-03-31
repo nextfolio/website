@@ -49,6 +49,7 @@ img {
 .offcenterBottomImgTxt {
     margin-top: 1vw;
     width: 40%;
+    font-size: 26px;
 }
 
 .offcenterTopImgTxt, .centeredImgTxt, .offcenterBottomImgTxt {
