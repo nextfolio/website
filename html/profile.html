@@ -1,62 +1,56 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>NextFolio - Profile</title>
-        
-        <meta charset="UTF-8">
-        <meta name="description" content="NextFolio's personal profile portfolio web page.">
-        <meta name="keywords" content="Stock, Security, Finances, Financial, Portfolio">
-        <meta name="author" content="Preston Rozwood, Ari Berkowicz">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        
-        <link rel="stylesheet" href="../css/navbar.css">    
-        <link rel="stylesheet" href="../css/profile.css">
-        <script src="https://d3js.org/d3.v5.min.js"></script>
-    </head>
+<head>
+    <title>NextFolio - Profile</title>
 
-    <body>
-        <nav class="navbar">
-            <div class="container-fluid spaced">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="../index.html">NextFolio</a>
-                </div>
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">Page 1</a>
-                    </li>
-                    <li>
-                        <a href="#">Page 2</a>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="logIn.html">
-                            <span class="glyphicon glyphicon-log-in"></span> Login</a>
-                    </li>
-                </ul>
+    <meta charset="UTF-8">
+    <meta name="description" content="NextFolio's personal profile portfolio web page.">
+    <meta name="keywords" content="Stock, Security, Finances, Financial, Portfolio">
+    <meta name="author" content="Preston Rozwood, Ari Berkowicz">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container-fluid spaced">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="../index.html">NextFolio</a>
             </div>
-        </nav>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="logIn.html">
+                        <span class="glyphicon glyphicon-log-in"></span> Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-        <header>
-            <h2>Username's Stock Portfolio:</h2>
-        </header>
+    <header>
+        <h2>Username's Stock Portfolio:</h2>
+    </header>
 
-        <main>
-            <div id="pie">
-                <p>Percent Makeup:</p>
-                <svg width=500 height=350></svg>
-            </div>
+    <main>
+        <div id="pie">
+            <p>Percent Makeup:</p>
+            <svg width=500 height=350></svg>
+        </div>
 
-            <div id="line-chart">
-                <p>Profit over time:</p>
-                <svg width=700 height=400></svg>
-            </div>
-        </main>
+        <div id="line-chart">
+            <p>Profit over time:</p>
+            <svg width=700 height=400></svg>
+        </div>
+    </main>
 
-        <script src="../js/profile.js"></script>
-    </body>
+    <script src="../js/profile.js"></script>
+</body>
+
 </html>
